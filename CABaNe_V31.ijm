@@ -90,7 +90,7 @@ var Type_LongestShortestPath;
 var LongestPathBody=1;
 var List_Operation=newArray("Analyze", "Sort", "Test_filter", "Sort_then_Analyze");
 var Operation="Analyze";
-DefaultDir= "C:\\Users\\NT271833\\";
+DefaultDir= "";
 File.setDefaultDir(DefaultDir);
 var special_option=0;
 
