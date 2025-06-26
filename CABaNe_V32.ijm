@@ -1039,7 +1039,7 @@ function analyzeGenerateOutputCell(OriginalName, index){
 	Table.set("Cell/Body ratio", rowIndex, BodyArea/cellArea);
 	if(EnableThirdMarking==1){
 		if(ThirdMarkingNuclei==1){
-			Table.set("Mean", rowIndex, (cellArea/nucleusArea)*ThirdMarkingMean);							//The analysis uses the cell ROI to make sure you do not have data not linked to a identified cell. This way, I negate the whole area (everything out of nuclei is 0 anyway)
+			Table.set("Mean", rowIndex, (nucleusArea/cellArea)*ThirdMarkingMean);							//The analysis uses the cell ROI to make sure you do not have data not linked to a identified cell. This way, I negate the whole area (everything out of nuclei is 0 anyway)
 		} else {
 			Table.set("Mean", rowIndex, ThirdMarkingMean);
 		}
